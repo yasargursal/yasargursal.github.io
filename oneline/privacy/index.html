@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneLine Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the OneLine iOS app. / OneLine iOS uygulaması gizlilik politikası.">
+  <style>
+    /* OneLine monokrom tasarım sistemiyle aynı renkler */
+    :root {
+      --background: #F6F5F2;
+      --surface: #FFFFFF;
+      --hairline: #E7E5E0;
+      --ink: #141413;
+      --ink-secondary: #6B6A66;
+      --flame: #F26B1D;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0F0F10;
+        --surface: #1A1A1C;
+        --hairline: #2C2C2F;
+        --ink: #F5F5F3;
+        --ink-secondary: #A1A09B;
+        --flame: #FF8A3D;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+    .mark { display: flex; align-items: center; gap: 6px; margin-bottom: 20px; }
+    .mark .line { width: 38px; height: 5px; border-radius: 3px; background: var(--ink); }
+    .mark .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--flame); }
+    h1, h2 { font-family: ui-serif, "New York", Georgia, "Times New Roman", serif; font-weight: 400; }
+    h1 { font-size: 40px; line-height: 1.15; letter-spacing: -0.5px; margin: 0 0 8px; }
+    h2 { font-size: 24px; margin: 40px 0 8px; }
+    .meta { color: var(--ink-secondary); font-size: 15px; margin: 0; }
+    .lang { display: flex; gap: 8px; margin: 28px 0 8px; }
+    .lang a {
+      padding: 6px 14px; border-radius: 999px; border: 1px solid var(--hairline);
+      color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 600;
+    }
+    .lang a.active { background: var(--ink); color: var(--background); border-color: var(--ink); }
+    .card {
+      background: var(--surface); border: 1px solid var(--hairline); border-radius: 20px;
+      padding: 20px 24px; margin-top: 24px;
+    }
+    .card ul { margin: 0; padding-left: 20px; }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    a { color: var(--ink); }
+    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2.2px; text-transform: uppercase; color: var(--ink-secondary); margin: 0 0 8px; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline); color: var(--ink-secondary); font-size: 14px; }
+    /* JavaScript açıkken sadece seçili dil görünür; kapalıyken ikisi de görünür */
+    .js section[data-lang]:not(.shown) { display: none; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span class="line"></span><span class="dot"></span></div>
+
+  <nav class="lang" aria-label="Language / Dil">
+    <a href="#en" data-switch="en">English</a>
+    <a href="#tr" data-switch="tr">Türkçe</a>
+  </nav>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="en" data-lang="en" lang="en">
+    <h1>OneLine Privacy Policy</h1>
+    <p class="meta">Last updated: 9 October 2026</p>
+
+    <div class="card">
+      <p class="eyebrow">In short</p>
+      <ul>
+        <li>OneLine stores only what it needs to work: your email address and the one sentence you write each day.</li>
+        <li>No ads, no analytics, no tracking. Your data is never sold or shared for marketing.</li>
+        <li>You can delete your account and all your entries at any time from inside the app.</li>
+      </ul>
+    </div>
+
+    <h2>Who is responsible</h2>
+    <p>OneLine is developed and operated by Yaşar Gürsal, an independent developer (“I”, “me”). I am the data controller for the personal data described in this policy. You can reach me at <a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a>.</p>
+
+    <h2>What data I collect</h2>
+    <p><strong>Account data.</strong> When you create an account: your email address and password. Your password is handled by Firebase Authentication and stored only in hashed form; I can never see it. I also record whether your email address has been verified and when your account was created.</p>
+    <p><strong>Your entries.</strong> The sentence you write each day (up to 150 characters), the day it belongs to, and the time it was saved.</p>
+    <p><strong>Technical data.</strong> To operate sign-in and sync securely, Google Firebase automatically processes limited technical information such as IP address, device and app information, and request logs.</p>
+
+    <h2>Data that stays on your device</h2>
+    <p>Your reminder settings (on/off and time), scheduled reminder notifications, and a local copy of your entries (so the app works offline) are stored only on your iPhone. Reminders are local notifications; no push server is involved.</p>
+
+    <h2>How I use your data</h2>
+    <p>Only to provide the app: to sign you in, to store and sync your entries, to calculate your streak and history, and to send account emails (email verification and password reset). I do not use your data for advertising, analytics, profiling or tracking, and I do not sell it.</p>
+
+    <h2>Service providers</h2>
+    <p>OneLine uses <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore), provided by Google, which processes data on my behalf. Your entries are stored in Cloud Firestore in Google’s Europe multi-region (eur3). Firebase Authentication may process account data on Google servers in other countries. You can read more in <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase’s privacy information</a>. I do not share your data with anyone else, except where required by law.</p>
+
+    <h2>Security</h2>
+    <p>Data is encrypted in transit (HTTPS/TLS) and encrypted at rest by Google. Database rules ensure that only your signed-in account can read or change your entries. Entries are not end-to-end encrypted; as the operator I could technically access stored data, but I do not read your entries unless you ask me to for support or I am legally required to.</p>
+
+    <h2>How long data is kept</h2>
+    <p>Your data is kept for as long as your account exists. When you choose <strong>Settings → Delete Account</strong> in the app, your entries, your user record and your account are permanently deleted right away. Google may keep residual copies in its systems for a limited time under its own deletion procedures. You can also ask me by email to delete your data.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the EU/UK GDPR or Türkiye’s KVKK), you may have the right to access, correct, export or delete your personal data, and to object to or restrict its processing. Most of this you can do directly in the app; for anything else, email me and I will respond within 30 days. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+    <h2>Children</h2>
+    <p>OneLine is not directed at children under 13 (or under 16 where local law requires), and I do not knowingly collect their data. If you believe a child has created an account, please contact me and I will delete it.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, I will update the date at the top of this page. If the changes are significant, I will also let you know in the app.</p>
+
+    <h2>Contact</h2>
+    <p>Yaşar Gürsal — <a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a></p>
+  </section>
+
+  <!-- ===================== TÜRKÇE ===================== -->
+  <section id="tr" data-lang="tr" lang="tr">
+    <h1>OneLine Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 9 Ekim 2026</p>
+
+    <div class="card">
+      <p class="eyebrow">Kısaca</p>
+      <ul>
+        <li>OneLine yalnızca çalışması için gerekeni saklar: e-posta adresin ve her gün yazdığın tek cümle.</li>
+        <li>Reklam, analitik ya da takip yok. Verilerin asla satılmaz veya pazarlama için paylaşılmaz.</li>
+        <li>Hesabını ve tüm kayıtlarını istediğin zaman uygulamanın içinden silebilirsin.</li>
+      </ul>
+    </div>
+
+    <h2>Veri sorumlusu</h2>
+    <p>OneLine, bağımsız geliştirici Yaşar Gürsal tarafından geliştirilir ve işletilir. Bu politikada anlatılan kişisel verilerin veri sorumlusu benim. Bana <a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a> adresinden ulaşabilirsin.</p>
+
+    <h2>Hangi verileri topluyorum</h2>
+    <p><strong>Hesap bilgileri.</strong> Hesap oluşturduğunda e-posta adresin ve şifren. Şifren Firebase Authentication tarafından yönetilir ve yalnızca şifrelenmiş (hash’lenmiş) olarak saklanır; ben asla göremem. Ayrıca e-postanın doğrulanıp doğrulanmadığı ve hesabının oluşturulma tarihi kaydedilir.</p>
+    <p><strong>Kayıtların.</strong> Her gün yazdığın cümle (en fazla 150 karakter), ait olduğu gün ve kaydedildiği saat.</p>
+    <p><strong>Teknik veriler.</strong> Girişin ve eşitlemenin güvenle çalışması için Google Firebase; IP adresi, cihaz ve uygulama bilgileri, istek kayıtları gibi sınırlı teknik bilgileri otomatik olarak işler.</p>
+
+    <h2>Sadece telefonunda kalan veriler</h2>
+    <p>Hatırlatma ayarların (açık/kapalı ve saat), planlanmış hatırlatma bildirimleri ve uygulamanın çevrimdışı çalışabilmesi için kayıtlarının yerel bir kopyası yalnızca iPhone’unda saklanır. Hatırlatmalar yerel bildirimdir; herhangi bir bildirim sunucusu kullanılmaz.</p>
+
+    <h2>Verilerini nasıl kullanıyorum</h2>
+    <p>Yalnızca uygulamayı sunmak için: giriş yapmanı sağlamak, kayıtlarını saklamak ve eşitlemek, serini ve geçmişini hesaplamak, hesap e-postalarını (e-posta doğrulama ve şifre sıfırlama) göndermek. Verilerini reklam, analitik, profil çıkarma veya takip için kullanmam ve satmam.</p>
+
+    <h2>Hizmet sağlayıcılar</h2>
+    <p>OneLine, Google tarafından sunulan ve verileri benim adıma işleyen <strong>Google Firebase</strong> hizmetlerini (Firebase Authentication ve Cloud Firestore) kullanır. Kayıtların Cloud Firestore’da Google’ın Avrupa çoklu bölgesinde (eur3) saklanır. Firebase Authentication hesap bilgilerini Google’ın başka ülkelerdeki sunucularında işleyebilir; bu, yurt dışına veri aktarımı anlamına gelir. Ayrıntılar için <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik bilgilerine</a> bakabilirsin. Yasal bir zorunluluk olmadıkça verilerini başka hiç kimseyle paylaşmam.</p>
+
+    <h2>Güvenlik</h2>
+    <p>Veriler aktarım sırasında (HTTPS/TLS) ve Google tarafından saklanırken şifrelenir. Veritabanı kuralları, kayıtlarını yalnızca senin hesabının okuyup değiştirebilmesini sağlar. Kayıtlar uçtan uca şifreli değildir; işletici olarak saklanan verilere teknik olarak erişebilirim, ancak destek için sen istemedikçe veya yasal olarak zorunlu olmadıkça kayıtlarını okumam.</p>
+
+    <h2>Veriler ne kadar saklanır</h2>
+    <p>Verilerin hesabın var olduğu sürece saklanır. Uygulamada <strong>Ayarlar → Hesabı sil</strong> seçeneğini kullandığında kayıtların, kullanıcı kaydın ve hesabın hemen ve kalıcı olarak silinir. Google, kendi silme süreçleri gereği artık kopyaları sistemlerinde sınırlı bir süre tutabilir. Verilerinin silinmesini e-postayla da isteyebilirsin.</p>
+
+    <h2>Hakların</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve yaşadığın yere göre AB/Birleşik Krallık GDPR kapsamında kişisel verilerine erişme, düzeltilmesini, dışa aktarılmasını veya silinmesini isteme, işlenmesine itiraz etme ya da kısıtlanmasını isteme hakların vardır. Bunların çoğunu doğrudan uygulamadan yapabilirsin; diğerleri için bana e-posta gönder, en geç 30 gün içinde yanıt veririm. Ayrıca Kişisel Verileri Koruma Kurulu’na veya bulunduğun ülkedeki veri koruma otoritesine şikâyette bulunma hakkın vardır.</p>
+
+    <h2>Çocuklar</h2>
+    <p>OneLine 13 yaşın altındaki (yerel yasaların gerektirdiği yerlerde 16 yaşın altındaki) çocuklara yönelik değildir ve bilerek onların verilerini toplamam. Bir çocuğun hesap oluşturduğunu düşünüyorsan bana yaz, hesabı silerim.</p>
+
+    <h2>Bu politikadaki değişiklikler</h2>
+    <p>Bu politika değişirse sayfanın başındaki tarihi güncellerim. Önemli değişikliklerde ayrıca uygulama içinden haber veririm.</p>
+
+    <h2>İletişim</h2>
+    <p>Yaşar Gürsal — <a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a></p>
+  </section>
+
+  <footer>OneLine · © 2026 Yaşar Gürsal</footer>
+</main>
+
+<script>
+  // Dil seçimi: adresteki #tr/#en → tarayıcı dili (Türkçe ise tr) → varsayılan en
+  (function () {
+    document.documentElement.classList.add('js');
+    var sections = document.querySelectorAll('section[data-lang]');
+    var links = document.querySelectorAll('[data-switch]');
+
+    function show(lang) {
+      sections.forEach(function (s) { s.classList.toggle('shown', s.dataset.lang === lang); });
+      links.forEach(function (a) { a.classList.toggle('active', a.dataset.switch === lang); });
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'OneLine Gizlilik Politikası' : 'OneLine Privacy Policy';
+    }
+
+    function fromHash() {
+      var h = location.hash.replace('#', '');
+      return h === 'tr' || h === 'en' ? h : null;
+    }
+
+    var browser = (navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+    show(fromHash() || browser);
+
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        history.replaceState(null, '', '#' + a.dataset.switch);
+        show(a.dataset.switch);
+        window.scrollTo(0, 0);
+      });
+    });
+    window.addEventListener('hashchange', function () { var l = fromHash(); if (l) show(l); });
+  })();
+</script>
+</body>
+</html>

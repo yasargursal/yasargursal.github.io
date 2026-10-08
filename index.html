@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yaşar Gürsal</title>
+  <style>
+    :root { --background: #F6F5F2; --ink: #141413; --ink-secondary: #6B6A66; --hairline: #E7E5E0; --flame: #F26B1D; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #0F0F10; --ink: #F5F5F3; --ink-secondary: #A1A09B; --hairline: #2C2C2F; --flame: #FF8A3D; }
+    }
+    body { margin: 0; background: var(--background); color: var(--ink);
+           font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px; }
+    h1 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 400; font-size: 40px; margin: 0 0 24px; }
+    .app { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+    .mark { display: flex; align-items: center; gap: 5px; }
+    .line { width: 28px; height: 4px; border-radius: 2px; background: var(--ink); }
+    .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--flame); }
+    a { color: var(--ink); }
+    .muted { color: var(--ink-secondary); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Yaşar Gürsal</h1>
+  <div class="app">
+    <span class="mark" aria-hidden="true"><span class="line"></span><span class="dot"></span></span>
+    <strong>OneLine</strong>
+    <span class="muted">·</span>
+    <a href="oneline/privacy/">Privacy Policy / Gizlilik Politikası</a>
+  </div>
+</main>
+</body>
+</html>
