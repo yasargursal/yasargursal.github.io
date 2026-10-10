@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneLine Support</title>
+  <meta name="description" content="Support for the OneLine iOS app. / OneLine iOS uygulaması destek sayfası.">
+  <style>
+    /* OneLine monokrom tasarım sistemiyle aynı renkler (gizlilik sayfasıyla aynı) */
+    :root {
+      --background: #F6F5F2;
+      --surface: #FFFFFF;
+      --hairline: #E7E5E0;
+      --ink: #141413;
+      --ink-secondary: #6B6A66;
+      --flame: #F26B1D;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0F0F10;
+        --surface: #1A1A1C;
+        --hairline: #2C2C2F;
+        --ink: #F5F5F3;
+        --ink-secondary: #A1A09B;
+        --flame: #FF8A3D;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+    .mark { display: flex; align-items: center; gap: 6px; margin-bottom: 20px; }
+    .mark .line { width: 38px; height: 5px; border-radius: 3px; background: var(--ink); }
+    .mark .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--flame); }
+    h1, h2, h3 { font-family: ui-serif, "New York", Georgia, "Times New Roman", serif; font-weight: 400; }
+    h1 { font-size: 40px; line-height: 1.15; letter-spacing: -0.5px; margin: 0 0 8px; }
+    h2 { font-size: 24px; margin: 40px 0 8px; }
+    h3 { font-size: 20px; margin: 28px 0 4px; }
+    .meta { color: var(--ink-secondary); font-size: 15px; margin: 0; }
+    .lang { display: flex; gap: 8px; margin: 28px 0 8px; }
+    .lang a {
+      padding: 6px 14px; border-radius: 999px; border: 1px solid var(--hairline);
+      color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 600;
+    }
+    .lang a.active { background: var(--ink); color: var(--background); border-color: var(--ink); }
+    .card {
+      background: var(--surface); border: 1px solid var(--hairline); border-radius: 20px;
+      padding: 20px 24px; margin-top: 24px;
+    }
+    .card p { margin: 0; }
+    .card .email { font-size: 20px; font-weight: 600; margin: 4px 0; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 4px 0; }
+    a { color: var(--ink); }
+    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2.2px; text-transform: uppercase; color: var(--ink-secondary); margin: 0 0 8px; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline); color: var(--ink-secondary); font-size: 14px; }
+    /* JavaScript açıkken sadece seçili dil görünür; kapalıyken ikisi de görünür */
+    .js section[data-lang]:not(.shown) { display: none; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span class="line"></span><span class="dot"></span></div>
+
+  <nav class="lang" aria-label="Language / Dil">
+    <a href="#en" data-switch="en">English</a>
+    <a href="#tr" data-switch="tr">Türkçe</a>
+  </nav>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="en" data-lang="en" lang="en">
+    <h1>OneLine Support</h1>
+    <p class="meta">OneLine is a minimal journal: one sentence a day.</p>
+
+    <div class="card">
+      <p class="eyebrow">Contact</p>
+      <p class="email"><a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a></p>
+      <p class="meta">Questions, bug reports or feedback. I usually reply within a few days. You can also write from the app: Settings → Send Feedback.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>I didn’t get the verification email.</h3>
+    <p>Check your Spam or Junk folder first. If it isn’t there, tap <strong>Resend email</strong> on the verification screen. After tapping the link in the email, return to the app; it continues automatically.</p>
+
+    <h3>I forgot my password.</h3>
+    <p>On the sign-in screen, tap <strong>Forgot password?</strong> and enter your email address. If an account exists for that address, you’ll receive a link to set a new password.</p>
+
+    <h3>My daily reminder doesn’t arrive.</h3>
+    <ul>
+      <li>Make sure <strong>Settings → Daily reminder</strong> is on and the time is right.</li>
+      <li>If OneLine shows “Notifications are off”, tap it and allow notifications in iOS Settings.</li>
+      <li>The reminder only comes on days you haven’t written yet. Open the app once in a while so upcoming reminders stay scheduled.</li>
+    </ul>
+
+    <h3>Can I edit or write more than one sentence a day?</h3>
+    <p>No. OneLine keeps one sentence per day, up to 150 characters, and a saved sentence can’t be changed.</p>
+
+    <h3>How is my streak counted?</h3>
+    <p>Your streak is the number of days in a row you’ve written. If you haven’t written yet today, it counts from yesterday, so it doesn’t reset in the morning. Days follow your iPhone’s local time.</p>
+
+    <h3>Does it work without internet?</h3>
+    <p>Yes. If you’re offline, your sentence is saved on your phone and sent to your account when you’re back online.</p>
+
+    <h3>I got a new iPhone. How do I get my entries back?</h3>
+    <p>Install OneLine and sign in with the same email address. Your entries are linked to your account and come back automatically.</p>
+
+    <h3>How do I delete my account?</h3>
+    <ol>
+      <li>Open <strong>Settings → Delete Account</strong>.</li>
+      <li>Enter your password to confirm.</li>
+    </ol>
+    <p>Your account and all your entries are permanently deleted right away. This can’t be undone. If you can’t sign in anymore, email me and I’ll delete your data for you.</p>
+
+    <h2>Privacy</h2>
+    <p>No ads, no tracking, no analytics. Read the full <a href="../privacy/#en">Privacy Policy</a>.</p>
+  </section>
+
+  <!-- ===================== TÜRKÇE ===================== -->
+  <section id="tr" data-lang="tr" lang="tr">
+    <h1>OneLine Destek</h1>
+    <p class="meta">OneLine sade bir günlük: her gün tek cümle.</p>
+
+    <div class="card">
+      <p class="eyebrow">İletişim</p>
+      <p class="email"><a href="mailto:oneline.destek@gmail.com">oneline.destek@gmail.com</a></p>
+      <p class="meta">Soru, hata bildirimi ya da geri bildirim için yazabilirsin. Genellikle birkaç gün içinde yanıt veririm. Uygulamadan da yazabilirsin: Ayarlar → Geri bildirim gönder.</p>
+    </div>
+
+    <h2>Sık sorulan sorular</h2>
+
+    <h3>Doğrulama e-postası gelmedi.</h3>
+    <p>Önce Spam / Gereksiz klasörüne bak. Orada da yoksa doğrulama ekranında <strong>E-postayı tekrar gönder</strong>’e dokun. E-postadaki linke tıkladıktan sonra uygulamaya dön; kendiliğinden devam eder.</p>
+
+    <h3>Şifremi unuttum.</h3>
+    <p>Giriş ekranında <strong>Şifremi unuttum</strong>’a dokun ve e-posta adresini gir. Bu adrese ait bir hesap varsa yeni şifre belirlemen için bir link gelir.</p>
+
+    <h3>Günlük hatırlatma gelmiyor.</h3>
+    <ul>
+      <li><strong>Ayarlar → Günlük hatırlatma</strong> açık mı ve saat doğru mu, kontrol et.</li>
+      <li>OneLine bildirimlerin kapalı olduğunu söylüyorsa uyarıya dokun ve iOS Ayarları’ndan bildirimlere izin ver.</li>
+      <li>Hatırlatma sadece o gün henüz yazmadıysan gelir. Sonraki hatırlatmaların planlı kalması için uygulamayı ara sıra aç.</li>
+    </ul>
+
+    <h3>Cümlemi düzenleyebilir veya günde birden fazla yazabilir miyim?</h3>
+    <p>Hayır. OneLine’da her gün için tek cümle (en fazla 150 karakter) olur ve kaydedilen cümle değiştirilemez.</p>
+
+    <h3>Serim nasıl sayılıyor?</h3>
+    <p>Serin, aralıksız yazdığın gün sayısıdır. Bugün henüz yazmadıysan sayım dünden başlar, böylece sabah sıfırlanmaz. Günler iPhone’unun yerel saatine göre belirlenir.</p>
+
+    <h3>İnternet olmadan çalışır mı?</h3>
+    <p>Evet. Çevrimdışıyken cümlen telefonunda saklanır ve bağlantı gelince hesabına gönderilir.</p>
+
+    <h3>Yeni iPhone aldım. Kayıtlarımı nasıl geri alırım?</h3>
+    <p>OneLine’ı yükle ve aynı e-posta adresiyle giriş yap. Kayıtların hesabına bağlı olduğu için kendiliğinden geri gelir.</p>
+
+    <h3>Hesabımı nasıl silerim?</h3>
+    <ol>
+      <li><strong>Ayarlar → Hesabı sil</strong>’i aç.</li>
+      <li>Onaylamak için şifreni gir.</li>
+    </ol>
+    <p>Hesabın ve tüm kayıtların hemen ve kalıcı olarak silinir. Bu işlem geri alınamaz. Artık giriş yapamıyorsan bana e-posta gönder, verilerini ben silerim.</p>
+
+    <h2>Gizlilik</h2>
+    <p>Reklam yok, takip yok, analitik yok. <a href="../privacy/#tr">Gizlilik politikasının</a> tamamını oku.</p>
+  </section>
+
+  <footer>OneLine · © 2026 Yaşar Gürsal</footer>
+</main>
+
+<script>
+  // Dil seçimi: adresteki #tr/#en → tarayıcı dili (Türkçe ise tr) → varsayılan en
+  (function () {
+    document.documentElement.classList.add('js');
+    var sections = document.querySelectorAll('section[data-lang]');
+    var links = document.querySelectorAll('[data-switch]');
+
+    function show(lang) {
+      sections.forEach(function (s) { s.classList.toggle('shown', s.dataset.lang === lang); });
+      links.forEach(function (a) { a.classList.toggle('active', a.dataset.switch === lang); });
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'OneLine Destek' : 'OneLine Support';
+    }
+
+    function fromHash() {
+      var h = location.hash.replace('#', '');
+      return h === 'tr' || h === 'en' ? h : null;
+    }
+
+    var browser = (navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+    show(fromHash() || browser);
+
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        history.replaceState(null, '', '#' + a.dataset.switch);
+        show(a.dataset.switch);
+        window.scrollTo(0, 0);
+      });
+    });
+    window.addEventListener('hashchange', function () { var l = fromHash(); if (l) show(l); });
+  })();
+</script>
+</body>
+</html>
